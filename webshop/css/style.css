@@ -1,0 +1,542 @@
+body, html{
+  margin: 0px;
+  font-family: "Roboto Condensed",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.product{
+  width: 150px;
+  margin-right: 30%;
+}
+
+#header {
+    min-height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.topnav{
+  float: left;
+  display: block;
+  color: #ccc;
+  text-align: center;
+  padding: 10px 30px 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+}
+
+.topnav a{
+  padding-right: -10px;
+  width: 60px;
+  height: 100%;
+  text-decoration: none;
+  color: gray;
+}
+.topnav a:hover{
+  color: #071638;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 150px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.cartImage{
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.img-effect {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  margin-left: 16%;
+  margin-top: 0%;
+  width: 50%;
+}
+
+.container:hover .image {
+  opacity: 0.1;
+  /*cursor: pointer;*/
+}
+
+.container:hover .img-effect {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.productNaam {
+  color: black;
+  font-size: 20px;
+}
+
+.prijs {
+  color: gray;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.omschrijving{
+  display: none;
+}
+
+.fa-shopping-cart{
+  color: black;
+  float: right;
+  cursor: pointer;
+}
+
+.pagination:hover{
+  text-decoration: underline;;
+  color: gray;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.fa-info-circle{
+  position: absolute;
+  top: 220px;
+  color: #16A085;
+}
+
+.fa-cart-plus{
+  position: absolute;
+  left: 220px;
+  color: #16A085;
+}
+
+.fa-plus-circle{
+  color: #16A085;
+}
+
+.fa-minus-circle{
+  color: #F1C40F;
+}
+
+.fa-trash{
+  color: #808080;
+}
+
+#shoppingText{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-top: 0px;
+  margin-top: -35px;
+  margin-left: 90px;
+}
+
+.cartKnopjes{
+  float: right;
+  font-size: 20px;
+  margin-top: -23px;
+  margin-left: 90px;
+}
+
+.cartPrijs{
+  font-size: 20px;
+  margin-top: -44px;
+  margin-left: 690px;
+}
+
+.cartAantal{
+  font-size: 20px;
+  margin-top: -70px;
+  margin-left: 460px;
+  padding-bottom: 20px;
+}
+
+.titelProductOverzicht{
+  border-bottom: 4px solid;
+  border-bottom-color: #F1C40F;
+  width: 320px;
+  padding-bottom: 8px;
+  color: #16A085;
+  margin-top: 60px;
+}
+#nieuwsteCar{
+  left: 320px;
+}
+
+#nieuwsteInfo{
+  left: 320px;
+}
+
+#cartTotal{
+  font-size: 20px;
+  float: right;
+}
+
+
+.info{
+  position: absolute;
+  background: #16A085;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 90px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 200px;
+}
+
+.info:hover {
+  background: transparent;
+  color: #16A085;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.nubetalen{
+  position: absolute;
+  background: #F1C40F;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 90px;
+  padding-left: px;
+  padding-right: px;
+  margin-top: 200px;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+.nubetalen:hover {
+  background: transparent;
+  color: #F1C40F;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.nieusteNubetalen{
+  position: absolute;
+  background: #F1C40F;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 110px;
+  padding-left: 20px;
+  padding-right: 5px;
+  margin-top: 201px;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+.nieusteNubetalen:hover {
+  background: transparent;
+  color: #F1C40F;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.nieuwsteNubetalen{
+  position: absolute;
+  background: #F1C40F;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 110px;
+  padding-left: 20px;
+  padding-right: 5px;
+  margin-top: 201px;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+.nieuwsteNubetalen:hover{
+  background: transparent;
+  color: #F1C40F;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  height: 275px;
+  margin-bottom: 0px;
+  background-color: #16A085;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.DproductNaam{
+  font-size: 28px;
+}
+
+.Dprijs{
+  color: #16A085;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Dplaatje{
+  height: 300px;
+  width: 400px;
+}
+
+#Product{
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-left: 90px;
+  font-size: 20px;
+  color: #16A085;
+}
+
+#Aantal{
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-left: 280px;
+  font-size: 20px;
+  color: #16A085;
+}
+
+#Prijs{
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-left: 185px;
+  font-size: 20px;
+  color: #16A085;
+}
+
+#table{
+  border-bottom: 4px solid;
+  border-bottom-color: #F1C40F;
+}
+
+input[type="text"], input[type="password"]{
+  outline: none;
+  padding: 10px;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cmsText{
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  text-align: right;
+  width: 140px;
+  color: #16A085;
+}
+
+#toevoegen{
+  position: relative;
+  background: #F1C40F;
+  font-size: 14px;
+  line-height: 46px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 0 38px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 100%;
+}
+
+#toevoegen:hover{
+  background: transparent;
+  color: black;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+#afrekenen{
+  position: relative;
+  background: #F1C40F;
+  margin-bottom: 100px;
+  font-size: 14px;
+  line-height: 46px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 0 38px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 100%;
+}
+
+#afrekenen:hover{
+  background: transparent;
+  color: black;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+#cmsform{
+  width: 450px;
+}
+
+#zoeken{
+  outline: none;
+  padding: 10px;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+#zoekButton{
+  position: relative;
+  background: #16A085;
+  font-size: 11px;
+  line-height: 32px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 60px;
+  margin-left: 10px;
+}
+
+#zoekButton:hover{
+  background: transparent;
+  color: black;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.content{
+  float: right;
+  padding-left: 200px;
+}
+
+.pagination{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  padding-left: 10px;
+}
+
+#paginaNummers{
+  display: inline-block;
+  margin-left: 160px;
+  margin-top: 60px;
+}
+
+/*.table {
+ border: solid 1px;
+ border-collapse: collapse;
+}*/
+.kleur {
+ color: #16A085;
+}
+/*#Product{
+  margin-left: 30px;
+  font-size: 20px;
+}*/
+/*.Domschrijving{
+
+}*/
+
+#DnuBetalen{
+  position: relative;
+  background: #F1C40F;
+  margin-bottom: 100px;
+  font-size: 14px;
+  line-height: 46px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 2px solid #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 0 38px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 100%;
+  text-decoration: none;
+}
+
+#DnuBetalen:hover{
+  background: transparent;
+  color: black;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
